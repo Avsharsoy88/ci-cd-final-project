@@ -34,6 +34,9 @@ spec:
             rm -rf "${WORKSPACE_SOURCE_PATH}"/..?*
             fi
 
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
   name: nose
 spec:
   description: This task will clean up a workspace by deleting all the files.
